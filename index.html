@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de Variables</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="accordion" id="variablesAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <strong>Estructura Variables Originales</strong>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                    <div class="accordion-body">
+                        <table class="table table-bordered table-striped">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Variable</th>
+                                    <th>Tipo</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            
+                                <tr>
+                                    <td>How old are you?</td>
+                                    <td>Categórica</td>
+                                    <td>Rango de edad del encuestado.</td>
+                                </tr>
+                                <tr>
+                                    <td>What industry do you work in?</td>
+                                    <td>Categórica</td>
+                                    <td>Industria donde labora el encuestado, pueden seleccionarse varias e incluir otras.</td>
+                                </tr>
+                                <tr>
+                                    <td>Job title</td>
+                                    <td>Texto</td>
+                                    <td>Profesión del encuestado.</td>
+                                </tr>
+                                <tr>
+                                    <td>If your job title needs additional context, please clarify here:</td>
+                                    <td>Texto</td>
+                                    <td>Contexto adicional para la profesión del encuestado.</td>
+                                </tr>
+                                <tr>
+                                    <td>What is your annual salary? </td>
+                                    <td>Numérica</td>
+                                    <td>Salario anual del encuestado en su moneda de preferencia.</td>
+                                </tr>
+                                <tr>
+                                    <td>How much additional monetary compensation do you get, if any? </td>
+                                    <td>Numérica</td>
+                                    <td>Ingresos adiconales anuales del encuestado en su moneda de preferencia.</td>
+                                </tr>
+                                <tr>
+                                    <td>Please indicate the currency</td>
+                                    <td>Categórica</td>
+                                    <td>Moneda correspondiente a los ingresos declarados del encuestado.</td>
+                                </tr>
+                                <tr>
+                                    <td>If &quot;Other,&quot; please indicate the currency here:</td>
+                                    <td>Texto</td>
+                                    <td>Se detalla la moneda si esta no se encuentra en la pregunta anterior.</td>
+                                </tr>
+                                <tr>
+                                    <td>If your income needs additional context, please provide it here:</td>
+                                    <td>Texto</td>
+                                    <td>Contexto adicional para los ingresos del encuestado.</td>
+                                </tr>
+                                <tr>
+                                    <td>What country do you work in?</td>
+                                    <td>Texto</td>
+                                    <td>País donde labura el encuestado, puede tomar cualquier valor.</td>
+                                </tr>
+                                <tr>
+                                    <td>If you&#39;re in the U.S., what state do you work in?</td>
+                                    <td>Categórica</td>
+                                    <td>Estado donde labura el encuestado en caso de trabajar en EEUU.</td>
+                                </tr>
+                                <tr>
+                                    <td>What city do you work in?</td>
+                                    <td>Texto</td>
+                                    <td>Ciudad donde trabaja el encuestado, puede tomar cualquier valor.</td>
+                                </tr>
+                                <tr>
+                                    <td>How many years of professional work experience do you have overall?</td>
+                                    <td>Categórica</td>
+                                    <td>Rango de años de experiencia laboral en general.</td>
+                                </tr>
+                                <tr>
+                                    <td>How many years of professional work experience do you have in your field?</td>
+                                    <td>Categórica</td>
+                                    <td>Rango de años de experiencia laboral en la industria donde trabaja actualmente.</td>
+                                </tr>
+                                <tr>
+                                    <td>What is your highest level of education completed?</td>
+                                    <td>Categórica</td>
+                                    <td>Nivel de educación máximo del encuestado.</td>
+                                </tr>
+                                <tr>
+                                    <td>What is your gender?</td>
+                                    <td>Categórica</td>
+                                    <td>Género del encuestado.</td>
+                                </tr>
+                                <tr>
+                                    <td>What is your race? (Choose all that apply.)</td>
+                                    <td>Categórica</td>
+                                    <td>Etnia a la que pertenece el encuestado, se pueden seleccionar varias.</td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <strong> Paso a Paso de Modelado</strong>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                    <div class="accordion-body">
+                        <p>Descargar datos en formato CSV desde <a href="https://docs.google.com/spreadsheets/d/1IPS5dBSGtwYVbjsfbaMCYIWnOuRmJcbequohNxCyGVw/edit?usp=sharing" target="_blank">este enlace</a>.</p>
+                        <p>Seguir los pasos del notebook disponible en el repositorio.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <strong>Estructura Variables Modeladas</strong>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                    <div class="accordion-body">
+                        <table class="table table-bordered table-striped">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Variable</th>
+                                    <th>Tipo</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Age</td>
+                                    <td>Categórica</td>
+                                    <td>Rango de edades.</td>
+                                </tr>
+                                <tr>
+                                    <td>Industry</td>
+                                    <td>Categórica</td>
+                                    <td>25 Industrias mas comunes en los encuestados.</td>
+                                </tr>
+                                <tr>
+                                    <td>Title</td>
+                                    <td>Texto</td>
+                                    <td>Profesiones.</td>
+                                </tr>
+                                <tr>
+                                    <td>Salary</td>
+                                    <td>Numérica</td>
+                                    <td>Salario anual en moneda de preferencia del encuestado, excluyendo datos atípicos.</td>
+                                </tr>
+                                <tr>
+                                    <td>Add_Comp</td>
+                                    <td>Numérica</td>
+                                    <td>Ingresos adiconales anuales moneda de preferencia del encuestado, excluyendo datoas atípicos.</td>
+                                </tr>
+                                <tr>
+                                    <td>Currency</td>
+                                    <td>Categórica</td>
+                                    <td>Moneda correspondiente a los ingresos, se divide la moneda NZD/AUD.</td>
+                                </tr>
+                                <tr>
+                                    <td>Other_Currency</td>
+                                    <td>Texto</td>
+                                    <td>Se detalla la moneda si esta no esta en las categorias anteriores.</td>
+                                </tr>
+                                <tr>
+                                    <td>Country</td>
+                                    <td>Categórica</td>
+                                    <td>Nombres de países estandarizados.</td>
+                                </tr>
+                                <tr>
+                                    <td>State</td>
+                                    <td>Categórica</td>
+                                    <td>Estado en caso de trabajr en EEUU.</td>
+                                </tr>
+                                <tr>
+                                    <td>City</td>
+                                    <td>Categórica</td>
+                                    <td>Ciudad donde trabaja el encuestado.</td>
+                                </tr>
+                                <tr>
+                                    <td>Experience_OvAll</td>
+                                    <td>Categórica</td>
+                                    <td>Rango de años de experiencia general.</td>
+                                </tr>
+                                <tr>
+                                    <td>Experience_Field</td>
+                                    <td>Categórica</td>
+                                    <td>Rango de años de experiencia en industria.</td>
+                                </tr>
+                                <tr>
+                                    <td>Education</td>
+                                    <td>Categórica</td>
+                                    <td>Máximo nivel de educación.</td>
+                                </tr>
+                                <tr>
+                                    <td>Gender</td>
+                                    <td>Categórica</td>
+                                    <td>Género del encuestado, se ignoran valores en blanco.</td>
+                                </tr>
+                                <tr>
+                                    <td>Race</td>
+                                    <td>Categórica</td>
+                                    <td>Etnias con las que se identifica el encuestado.</td>
+                                </tr>
+                                <tr>
+                                    <td>EXC/COP</td>
+                                    <td>Numérica</td>
+                                    <td>Tasa de intercambio, moneda del encuestado a COP.</td>
+                                </tr>
+                                <tr>
+                                    <td>COP_Salary</td>
+                                    <td>Numérica</td>
+                                    <td>Salario anual en COP.</td>
+                                </tr>
+                                <tr>
+                                    <td>COP_Comp</td>
+                                    <td>Numérica</td>
+                                    <td>Ingresos adicionales anuales en COP.</td>
+                                </tr>
+                                <tr>
+                                    <td>COP_Tot</td>
+                                    <td>Numérica</td>
+                                    <td>Suma de Salario e Ingresos adicionales en COP.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
